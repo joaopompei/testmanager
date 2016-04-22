@@ -1,0 +1,20 @@
+<h2>New Test Case</h2>
+
+
+<%= form_for :testcase, url: testcase_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :steps %><br>
+    <%= f.text_area :steps %><br>
+    <%= f.label :results %><br>
+    <%= f.text_area :results %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
